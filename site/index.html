@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-menu ">
+
+                <a href="#info" id="logo">
+                    <img src="img/1.png" alt="Логотип JS" width="50" height="50.5">
+                </a>
+
+                <div class="header-nav-link">
+                    <a href="#user" id='user4'>Пользователь, представьтесь</a>
+                </div>
+
+                <div class="header-nav-link">
+                    <a href="#square" id='square4'>Вычислить площадь треугольника</a>
+
+                </div>
+                <div class="header-nav-link">
+                    <a href="#strings" id='strings4'>Сравним строки</a>
+                </div>
+
+                <div class="header-nav-link">
+                    <a href="#arr" id='arr4'>Ввод массива</a>
+                </div>
+                <div class="header-nav-link">
+                    <a href="#time" id='time4'>Таймер</a>
+                </div>
+                <div class="header-nav-link">
+                    <a href="#test" id='test4'>Пройти тест</a>
+                </div>
+
+                <div class="header-nav-link">
+                    <a href="#img" id='img4'>Посмотреть на красивую картинку</a>
+                </div>
+                <div class="header-nav-link">
+                    <a href="name" id="target"></a>
+                </div>
+        </div>
+        <aside class="aside-img"></aside>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div id="info"></div>
+        <div id="expoziciya"></div>
+        <div class="container_1">
+            <div class="container">
+                <div class="gallery">
+                    <div class="img1"> <img src="img/2.jpg" alt="фото js">
+                    </div>
+                    <div class="text1">
+                        <h2>JavaScript</h2>
+                        <p>Объектно-ориентированный скриптовый язык программирования. Является диалектом (вариация или
+                            расширение) языка ECMAScript.
+                            Обычно используется как встраиваемый язык для программного доступа к объектам приложений.
+                            Наиболее широкое применение находит в браузерах как язык сценариев для придания
+                            интерактивности веб-страницам.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="user"></div>
+        <div class="secrets">
+            <div class="container">
+                <div id="secret">
+                    <div class="content">
+                        <h1>"Пользователь, представьтесь"</h1>
+                    </div>
+                    <div class="user">
+                        <div class="container user">
+                            <div class="content_4">
+                            </div>
+                            <form>
+                                <div class="pers">
+                                    Личная информация
+                                    <p>
+                                        <label for="name" class="control-label required">Имя:</label>
+                                        <input type="text" name="name" id="name" required class="form-control"
+                                            placeholder="Иван" pattern="^[А-Яа-яЁё\s]+$">
+                                    <div class="vvod">
+                                        <p>
+                                            <input type="button" id="set" data-show="text6" value="Войти">
+                                            <input type="reset" value="Очистить">
+                                        </p>
+                                    </div>
+                                    <output id="message"></output>
+                                    <div id="square"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ways-1000" id="ways-1000">
+
+                        <div class="container"></div>
+                        <div class="content_2">
+                            <h1>Площадь треугольника</h1>
+                        </div>
+                        <div class="o_contente_2">
+                            <div class="text3">
+                                <p>
+                                <form>
+                                    <div class="pers">
+                                        <label for="height" class="control-label required">Высота треугольника:</label>
+                                        <input type="number" name="height" id="height"><br>
+                                        <p></p>
+                                        <label for="side" class="control-label required">Основание треугольника:</label>
+                                        <input type="number" name="side" id="side"><br>
+                                        <div class="vvod">
+                                            <p>
+                                                <input type="button" id="s" value="Посчитать">
+                                                <input type="reset" value="Очистить">
+                                            </p>
+                                        </div>
+                                        <output id="mess"></output>
+                                        <div id="strings"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="people">
+                    <div class="container">
+                        <div class="content_3">
+                            <h1>Сравним строки</h1>
+                        </div>
+                        <div class="o_contente_3">
+                            <form>
+                                <div class="pers">
+                                    <p>
+                                        <label for="string1" class="control-label required">Введите первую
+                                            строку:</label>
+                                        <input type="text" name="string1" id="string1">
+                                    <p></p>
+                                    <label for="string2" class="control-label required">Введите вторую строку:</label>
+                                    <input type="text" name="string2" id="string2">
+                                    <div class="vvod" id="arr">
+                                        <p>
+                                            <input type="button" id="set3" onclick="show()" value="Сравнить">
+                                            <input type="reset" value="Очистить">
+                                        </p>
+                                    </div>
+                                    <output id="message3"></output>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="array">
+                    <div class="container user">
+                        <div class="content_4">
+                            <h1>Исследуем массив</h1>
+                        </div>
+                        <div class="o_contente_4">
+                            <form>
+                                <div class="pers">
+                                    <p>
+                                        <label for="string1" class="control-label required">Введите массив из пяти
+                                            элементов:</label><br>
+                                    <form>
+                                        <input type="number" name="array[]" value="0"><br>
+                                        <input type="number" name="array[]" value="0"><br>
+                                        <input type="number" name="array[]" value="0"><br>
+                                        <input type="number" name="array[]" value="0"><br>
+                                        <input type="number" name="array[]" value="0"><br>
+                                        <div class="vvod" id="time">
+                                            <p>
+                                                <input type="button" id="set4" value="Сравнить">
+                                                <input type="reset" value="Очистить">
+                                            </p>
+                                            <output id="message4"></output>
+                                            <div class="timer" id="timer"></div>
+                                        </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container">
+                    <div class="content_4">
+                        <h1>Таймер</h1>
+                    </div>
+                    <div class="o_contente_4">
+                        <div class="pers">
+                            <script type="text/javascript">
+                                var c = 30;
+                                var t;
+                                var timer_is_on = 0;
+
+                                function timedCount() {
+                                    document.getElementById('txt').value = c;
+                                    c = c - 1;
+                                    t = setTimeout(timedCount, 1000);
+                                    if (c < 0) {
+                                        clearTimeout(t);
+                                    }
+                                }
+                                function doTimer() {
+                                    if (!timer_is_on) {
+                                        timer_is_on = 1;
+                                        timedCount();
+                                    }
+                                }
+                                function stopCount() {
+                                    document.getElementById('txt1').value = t - 2;
+                                    clearTimeout(t);
+                                    timer_is_on = 0;
+                                }
+                            </script>
+                            <form id="test">
+                                <input type="button" value="Start" onclick="doTimer()" />
+                                <p></p>
+                                <input type="text" id="txt" />
+                                <p></p>
+                                <input type="text" id="txt1" />
+                                <p></p>
+                                <input type="button" value="Stop" onclick="stopCount()" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content_4">
+                    <h1>Тест</h1>
+                </div>
+                <div class="content_4 serv" id="testF1">
+                    <FORM name=test>
+                        <OL>
+                            <LI>
+                                <H1>
+                                    <INPUT size=1 name=T1>Что будет выведено в консоль после выполнения
+                                    данного кода?
+                                    console.log(typeof null);
+                                </H1>
+                                <INPUT type=radio name=Q1 size=1> null <BR>
+                                <INPUT type=radio name=Q1> undefined <BR>
+                                <INPUT type=radio name=Q1> object <BR>
+                                <INPUT type=radio name=Q1> false <BR><BR>
+
+                            <LI>
+                                <H4><INPUT size=1 name=T2> Является ли JavaScript регистрозависимым?
+                                </H4>
+                                <INPUT type=radio name=Q2> Да <BR>
+                                <INPUT type=radio name=Q2> Нет <BR><BR>
+
+                            <LI>
+                                <H4>
+                                    <INPUT size=1 name=T3> Что будет выведено в результате?
+                                    console.log(null === null);
+                                </H4>
+                                <INPUT type=radio name=Q3> NaN <BR>
+                                <INPUT type=radio name=Q3> null <BR>
+                                <INPUT type=radio name=Q3> true <BR>
+                                <INPUT type=radio name=Q3> false <BR><BR>
+
+                            <LI>
+                                <H4>
+                                    <INPUT size=1 name=T4> Что будет результатом выполнения данного
+                                    кода?
+                                    console.Log('Green');
+                                </H4>
+                                <INPUT type=radio name=Q4> null <BR>
+                                <INPUT type=radio name=Q4> string <BR>
+                                <INPUT type=radio name=Q4> TypeError <BR>
+                                <INPUT type=radio name=Q4> Green <BR><BR>
+
+                            <LI>
+                                <H4>
+                                    <INPUT size=1 name=T5> Что будет выведено на консоль?
+                                    console.log(1 + ‘2’ + 3);
+                                </H4>
+                                <INPUT type=radio name=Q5> 5 <BR>
+                                <INPUT type=radio name=Q5> 6 <BR>
+                                <INPUT type=radio name=Q5> 123 <BR>
+                                <INPUT type=radio name=Q5> 15 <BR><BR>
+
+                            <LI>
+                                <H4>
+                                    <INPUT size=1 name=T6> Что будет выведено?
+                                    console.log(NaN == NaN || NaN === NaN);
+                                </H4>
+                                <INPUT type=radio name=Q6> undefined <BR>
+                                <INPUT type=radio name=Q6> false <BR>
+                                <INPUT type=radio name=Q6> null <BR>
+                                <INPUT type=radio name=Q6> true <BR>
+
+                            </LI>
+                        </OL><BR>
+                        <CENTER>
+                            <P><TEXTAREA name=s1 rows=4 cols=70> </TEXTAREA> </P><INPUT onclick=check_me() type=button
+                                value="Показать результат">
+                            <INPUT type=reset value="Сбросить ответы">
+                        </CENTER><BR><BR>
+                    </FORM>
+                    <P>
+                    <P></P>
+                    </FONT>
+                </div>
+
+                <div class="container">
+                    <div class="content_4" id="img">
+                        <h1>Красивая картинка</h1>
+                    </div>
+                    <img id="myImg" src="re.jpg" style="width:100%;max-width:300px">
+                    <div id="myModal" class="modal">
+                        <span class="close">×
+                        </span>
+                        <span1 class="close1">
+                            <div id="date"></div>
+                            <p id="pic"></p>
+                        </span1>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+    </main>
+
+    <script>
+        var res = "313332"
+        function check_me() {
+            var count = 0
+            with (document.test) {
+
+                if (!Q1[0].checked && !Q1[1].checked && !Q1[2].checked && !Q1[3].checked) { count += 1 };
+                if (!Q2[0].checked && !Q2[1].checked) { count += 1 };
+                if (!Q3[0].checked && !Q3[1].checked && !Q3[2].checked && !Q3[3].checked) { count += 1 };
+                if (!Q4[0].checked && !Q4[1].checked && !Q4[2].checked && !Q4[3].checked) { count += 1 };
+                if (!Q5[0].checked && !Q5[1].checked && !Q5[2].checked && !Q5[3].checked) { count += 1 };
+                if (!Q6[0].checked && !Q6[1].checked && !Q6[2].checked && !Q6[3].checked) { count += 1 };
+                if (count > 0) {
+                    alert("Вы выполнили не все задания. Проверьте себя.")
+                }
+                else answer()
+            }
+        }
+        function control(k, f1, f2, f3, f4, f5, f6) {
+
+            if (k == 1 && f1.checked) return true;
+
+            if (k == 2 && f2.checked) return true;
+
+            if (k == 3 && f3.checked) return true;
+
+            if (k == 4 && f4.checked) return true;
+
+            if (k == 5 && f5.checked) return true;
+
+            if (k == 6 && f6.checked) return true;
+
+            return false;
+        }
+
+        function answer() {
+
+            answ = "";
+            with (document) {
+
+                answ += control(res.charAt(0), test.Q1[0], test.Q1[1], test.Q1[2], test.Q1[3]) ? "1" : "0"
+
+                answ += control(res.charAt(1), test.Q2[0], test.Q2[1]) ? "1" : "0"
+
+                answ += control(res.charAt(2), test.Q3[0], test.Q3[1], test.Q3[2], test.Q3[3]) ? "1" : "0"
+
+                answ += control(res.charAt(3), test.Q4[0], test.Q4[1], test.Q4[2], test.Q4[3]) ? "1" : "0"
+
+                answ += control(res.charAt(4), test.Q5[0], test.Q5[1], test.Q5[2], test.Q5[3]) ? "1" : "0"
+
+                answ += control(res.charAt(5), test.Q6[0], test.Q6[1], test.Q6[2], test.Q6[3]) ? "1" : "0"
+                showResult();
+            }
+        }
+
+        function showResult() {
+            var nok = 0;
+            var i, s;
+
+            for (i = 0; i < answ.length; i++) { nok += answ.charAt(i) == "1" ? 1 : 0; } if (nok < 3) s = '"НЕУДОВЛЕТВОРИТЕЛЬНО"'
+                ; if (nok == 3) s = '"УДОВЛЕТВОРИТЕЛЬНО"'; if (nok > 3 && nok < 4) s = '"УДОВЛЕТВОРИТЕЛЬНО"';
+            if (nok == 4) s = '"ХОРОШО"'; if (nok > 4 && nok < 6) s = '"ХОРОШО"'; if (nok == 6) s = '"ОТЛИЧНО"';
+            document.test.s1.value = "Количество правильных ответов " + nok + ". Ваша оценка " + s;
+            with (document.test) {
+                if (answ.charAt(0) == "1") {
+                    T1.value = " + "
+                } else { T1.value = " -" }; if (answ.charAt(1) == "1") { T2.value = " +" } else { T2.value = " -" }; if (answ.charAt(2) == "1") { T3.value = " +" } else { T3.value = " -" };
+                if (answ.charAt(3) == "1") { T4.value = " +" } else { T4.value = " -" }; if
+                    (answ.charAt(4) == "1") { T5.value = " +" } else { T5.value = " -" }; if
+                    (answ.charAt(5) == "1") { T6.value = " +" } else { T6.value = " -" };
+            }
+        }
+    </script>
+
+    <script>
+        const options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timezone: 'UTC',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric'
+        };
+        const date = document.getElementById('date')
+        date.innerHTML = new Date().toLocaleString("ru", options)
+        setInterval(() => {
+            date.innerHTML = new Date().toLocaleString("ru", options)
+        }, 1000)
+    </script>
+    <script>
+        var modal = document.getElementById('myModal');
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        var span1 = document.getElementsByClassName("close1")[0];
+        span1.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+    <script>
+        const result4 = document.getElementById('message4');
+        const setButton4 = document.getElementById('set4');
+
+        function Input4(click) {
+            var arr = document.getElementsByName("array[]");
+            let array = [];
+            arr.forEach(a => array.push(a.value));
+            var n = 5;
+            var i;
+            let max = array[0];
+            for (var i = 0; i < array.length; i++) {
+                if (max < array[i]) max = array[i];
+            }
+            let min = array[0];
+            for (var i = 0; i < array.length; i++) {
+                if (min > array[i]) min = array[i];
+            }
+            result4.value = 'Максимум:' + max + 'Минимум: ' + min;
+        }
+        setButton4.addEventListener("click", Input4);
+    </script>
+    <script>
+        const result1 = document.getElementById('message3');
+        const setButton3 = document.getElementById('set3');
+        function show(click) {
+            let first = document.getElementById('string1').value.split(' ').join('').trim().length;
+            let second = document.getElementById('string2').value.split(' ').join('').trim().length;
+            click.preventDefault();
+            if (first < second) {
+                result1.value = `Вторая строка длинее первой`
+            }
+            if (first == second) {
+                result1.value = `Строки одинаковы`
+            }
+            if (first > second) {
+                result1.value = `Первая строка длинее второй`
+            }
+        }
+        setButton3.addEventListener("click", show);
+
+    </script>
+    <script>
+        const setButton1 = document.getElementById('s');
+        const heightField = document.getElementById('height');
+        const sideField = document.getElementById('side');
+        const result2 = document.getElementById('mess');
+        function area(click) {
+            if (document.getElementById("height").value == '' && document.getElementById("side").value == '') {
+                alert('Введите числа');
+                return false;
+            }
+            if (document.getElementById("height").value < 0 && document.getElementById("side").value < 0) {
+                alert('Введите положительные цисла');
+                return false;
+            }
+            click.preventDefault();
+            let area = 0.5 * sideField.value * heightField.value;
+            result2.value = 'Площадь:' + area;
+        }
+        setButton1.addEventListener("click", area);
+    </script>
+
+    <script>
+        const setButton = document.getElementById('set');
+        const nameField = document.getElementById('name');
+        const result = document.getElementById('message');
+
+        function showMessage(click) {
+            if (document.getElementById("name").value == '') {
+                alert('Заполните все поля');
+                return false;
+            }
+            click.preventDefault();
+            result.value = 'Привет,' + nameField.value;
+            localStorage.setItem('name', nameField.value);
+        }
+        setButton.addEventListener('click', showMessage);
+
+        function showText() {
+            var localValue = localStorage.getItem('name');
+            target.textContent = localValue;
+        }
+        setButton.addEventListener('click', showText);
+
+        function showPic() {
+            var localValue = localStorage.getItem('name');
+            pic.textContent = localValue;
+        }
+        setButton.addEventListener('click', showPic);
+
+        function showMessage1(click) {
+            click.preventDefault();
+            alert('Используется метод document.getElementById() объекта Document, который возвращает объект Element. Метод preventDefault используется для отмены действия браузера. Метод setItem() интерфейса Storage передает ключ и значение, в хранилище будет добавлено соответствующее ключу значение. Метод Event.addEventListener() регистрирует определенный обработчик события, вызванного на Event. TextContent используется для получения или записи текста в элемент. ');
+        }
+        const setButton7 = document.getElementById("user4");
+        setButton7.addEventListener('click', showMessage1);
+
+        function showMessage2(click) {
+            click.preventDefault();
+            alert('Используется метод document.getElementById() объекта Document, который возвращает объект Element. Метод preventDefault используется для отмены действия браузера. Метод Event.addEventListener() регистрирует определенный обработчик события, вызванного на Event.');
+        }
+        const setButton8 = document.getElementById("square4");
+        setButton8.addEventListener('click', showMessage2);
+
+        function showMessage3(click) {
+            click.preventDefault();
+            alert('Используется метод document.getElementById() объекта Document, который возвращает объект Element. Метод preventDefault используется для отмены действия браузера. Метод Event.addEventListener() регистрирует определенный обработчик события, вызванного на Event. Метод  Object.values() возвращает массив значений перечисляемых свойств объекта');
+        }
+        const setButton9 = document.getElementById("strings4");
+        setButton9.addEventListener('click', showMessage3);
+
+        function showMessage4(click) {
+            click.preventDefault();
+            alert('Используется метод document.getElementById() объекта Document, который возвращает объект Element. Метод preventDefault используется для отмены действия браузера. Метод Event.addEventListener() регистрирует определенный обработчик события, вызванного на Event. Метод split() разбивает объект String на массив строк путём разделения строки указанной подстрокой. Метод trim() удаляет пробельные символы с начала и конца строки. Cвойство length объекта, который является экземпляром типа Array , устанавливает или возвращает число элементов этого массива. Метод  Object.values() возвращает массив значений перечисляемых свойств объекта.');
+        }
+        const setButton10 = document.getElementById("arr4");
+        setButton10.addEventListener('click', showMessage4);
+
+        function showMessage5(click) {
+            click.preventDefault(); alert('SetTimeout позволяет вызвать функцию один раз через определённый интервал времени. SetInterval позволяет вызывать функцию регулярно, повторяя вызов через определённый интервал времени. ');
+
+        }
+        const setButton11 = document.getElementById("time4");
+        setButton11.addEventListener('click', showMessage5);
+
+        function showMessage6(click) {
+            click.preventDefault();
+            alert('Используется метод document.getElementByName() объекта Document, который возвращает объект Element. Метод preventDefault используется для отмены действия браузера. Метод Event.addEventListener() регистрирует определенный обработчик события, вызванного на Event. Метод forEach() выполняет указанную функцию один раз для каждого элемента в массиве. SetTimeout позволяет вызвать функцию один раз через определённый интервал времени. SetInterval позволяет вызывать функцию регулярно, повторяя вызов через определённый интервал времени.');
+        }
+        const setButton12 = document.getElementById("img4");
+        setButton12.addEventListener('click', showMessage6);
+
+        function showMessage7(click) {
+            click.preventDefault();
+            alert('Используется метод document.getElementById() объекта Document, который возвращает объект Element. Метод preventDefault используется для отмены действия браузера. Метод Event.addEventListener() регистрирует определенный обработчик события, вызванного на Event. Cвойство length объекта, который является экземпляром типа Array , устанавливает или возвращает число элементов этого массива. Метод  Object.values() возвращает массив значений перечисляемых свойств объекта. CreateElement создаёт элемент. Node.appendChild() добавляет узел в конец списка дочерних элементов указанного родительского узла. Если в метод getItem() интерфейса Storage передать ключ в качестве параметра, то метод вернет значение, лежащее в хранилище по указанному ключу. Если методу setItem() интерфейса Storage передать ключ и значение, то в хранилище будет добавлено соответствующее ключу значение. Метод forEach() выполняет указанную функцию один раз для каждого элемента в массиве.');
+        }
+        const setButton13 = document.getElementById("test4");
+        setButton13.addEventListener('click', showMessage7);
+    </script>
+    <script src="2.js"></script>
+</body>
+
+</html>
